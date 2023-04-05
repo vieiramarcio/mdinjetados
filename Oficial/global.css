@@ -1,0 +1,41 @@
+.clear {
+  background: transparent;
+  border: none;
+  color: white;
+}
+.solid {
+  background: white;
+  border: none;
+  color: rgb(45, 211, 111);
+}
+.outline {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.error {
+  color: white;
+  background-color: red;
+  display: none;
+}
+button:active {
+  opacity: 0.8;
+}
+button[disabled] {
+  opacity: 0.8;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 15px;
+  border-radius: 25px;
+  position: absolute;
+  width: 90%;
+  margin-left: 70px;
+}
+
+.imagem {
+  height: 100px;
+  border-radius: 25px;
+}

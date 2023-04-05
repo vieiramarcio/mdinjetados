@@ -6,20 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./estilo.css" />
     <title>Login</title>
+    <script src="./script.js"></script>
   </head>
+
   <body>
     <div class="div_header">
       <img class="imagem" src="./imagens/logo.jpg" />
     </div>
     <div class="div_botao">
       <h1>Login</h1>
-      <input class="input_login" type="email" placeholder="e-mail" />
+      <input
+        class="input_login"
+        type="email"
+        id="email"
+        placeholder="e-mail"
+        onchange="validateFields()"
+      />
       <br />
       <br />
-      <input class="input_login" type="password" placeholder="senha" />
+      <input
+        class="input_login"
+        type="password"
+        id="password"
+        placeholder="senha"
+        onchange="validateFields"
+      />
+      <br /><br />
+
+      <button
+        type="submit"
+        class="botao_login"
+        id="login-button"
+        disabled="true"
+        onclick="login()"
+      >
+        Entrar
+      </button>
+
       <br />
       <br />
-      <button class="botao_login">Entrar</button>
+      <button
+        type="button"
+        class="botao_login"
+        id="recovery-password-button"
+        disabled="true"
+      >
+        Recuperar senha
+      </button>
     </div>
   </body>
 </html>
